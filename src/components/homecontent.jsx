@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function HomeContent(){
     return (
         <div className="container mx-auto px-4 py-8">
@@ -11,7 +13,7 @@ export default function HomeContent(){
                 <p className="text-sm text-gray-700">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </p>
-                <div className="flex justify-center mt-4 text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Details</div>
+                <Link to="/reptiles"><div className="flex justify-center mt-4 text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Details</div></Link>
               </div>
             </div>
             <div className="rounded-lg shadow-md overflow-hidden">
@@ -21,17 +23,17 @@ export default function HomeContent(){
                 <p className="text-sm text-gray-700">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </p>
-                <div className="flex justify-center mt-4 text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Details</div>
+                <Link to="/birds"><div className="flex justify-center mt-4 text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Details</div></Link>
               </div>
             </div>
             <div className="rounded-lg shadow-md overflow-hidden">
               <img src="pic3.jpg" alt="Animals" className="aspect-square object-cover rounded-full" />
               <div className="px-4 py-2 bg-white">
-                <h3 className="text-center text-lg font-semibold mb-2">Animals</h3>
+                <h3 className="text-center text-lg font-semibold mb-2">Mammals</h3>
                 <p className="text-sm text-gray-700">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </p>
-                <div className="flex justify-center mt-4 text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Details</div>
+                <Link to="/mammals"><div className="flex justify-center mt-4 text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Details</div></Link>
               </div>
             </div>
           </div>
